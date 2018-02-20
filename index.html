@@ -10,7 +10,17 @@
   </head>
   <body>
     <script>
-      // code
+      function makeGrid(width, height) {
+        var grid = [];
+        for (var x=0; x<width; x++) {
+          var column = new Array(height);
+          column.fill(0);
+          grid.push(column);
+        }
+        return grid;
+      }
+
+      console.log(makeGrid(11,11));
     </script>
   </body>
 </html>
